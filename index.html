@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/984ac9dfc5.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Playlist</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="filter">
+            <nav>
+                <div class="container">
+                    <div class="logo"></div>
+                    
+                    <div class="list-social">
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-tiktok' ></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-youtube' ></i>
+                        <i class='bx bxl-discord-alt' ></i>
+                        <i class='bx bxl-twitch' ></i>               
+                    </div>
+                    <div class="hamburger-lines" id="openMenu">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div> 
+                </div> 
+                <div class="navigation" id="navigation">
+                    <div class="small-container">
+                        <div class="logo"></div>
+                        <div class="hamburger-lines" id="closeMenu">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                        </div>
+                    </div>
+                    <div class="content uppercase">
+                        <h2 id="musicBtn">music <i class='bx bxs-chevron-right'></i></h2>
+                        <div class="dropdown " id="music">                        
+                            <a href="">Our music</a>
+                            <a href="">Instinct</a>
+                            <a href="">Uncaged</a>
+                            <a href="">Silk</a>
+                        </div>       
+                        <h2>artists</h2>
+                        
+                        <h2 id="aboutBtn">About <i class='bx bxs-chevron-right'></i></h2>
+                        <div class="dropdown " id="about">                      
+                            <a href="">About Avicii</a>
+                            <a href="">Diversity & inclusion</a>
+                            <a href="">Code of ethics</a>
+                            <a href="">Environmental</a>
+                            <a href="">Contact us</a>
+                        </div>
+                        <h2>News</h2>
+                        <h2 id="eventsBtn">Events <i class='bx bxs-chevron-right'></i></h2i>
+                        <div class="dropdown " id="events">                        
+                            <a href="">Avicii events experience</a>
+                            <a href="">Upcoming events</a>
+                        </div>
+                        <h2 id="programBtn">Programming <i class='bx bxs-chevron-right'></i></h2>
+                        <div class="dropdown " id="program">
+                            <a href="">Avicii TV</a>
+                            
+                        </div>
+                        <h2>Gold</h2>
+                        <h2>Partners</h2>
+                        <h2>Press</h2>
+                        <h2>Player</h2>
+                        <h2>Shop</h2>
+                        <h2>Lost civilization</h2>
+                    </div>
+                    <div class="footer">
+                        <div class="icons">
+                            <i class='bx bxl-discord-alt' ></i>
+                            <i class='bx bxl-twitch' ></i>
+                            <i class='bx bxl-tiktok' ></i>
+                            <i class='bx bxl-twitter' ></i>
+                            <i class='bx bxl-youtube' ></i>
+                            <i class='bx bxl-instagram' ></i>
+                        </div>
+                        <div class="sign">
+                            <button class="sign-in uppercase">Sign in</button>
+                            
+                            <button class="sign-up uppercase"> or sign up</button>
+                        </div>                
+                    </div>      
+                </div>
+            </nav>
+            <article>       
+                    <div class="container">
+                        <div class="song-picture wrap">
+                            <h3 class="letter"><span>Wake Me Up</span>- Realeased June 17, 2013</h3>
+                            <img src="Images/6995772013e070de0d62cc5853f4df9f.jpg" alt="">
+                        </div>
+                        <div class="play wrap">
+                            <div class="text ">
+                                <h1 class="uppercase ">True </h1>
+                                <h2 class="uppercase letter">wake me up</h2>
+                            </div>
+                            <div class="buttons ">
+                                <button class="fa-solid fa-play listen" id="play-button"> listen now</button>
+                                <audio src="Music/Avicii_-_Wake_Me_Up_(Jesusful.com).mp3" id="audio" ></audio>
+                                <button class="fa-solid fa-share-nodes share" id="share-button"> share</button> 
+                            </div>
+                        </div>
+                    </div>
+            </article>
+       
+        </div>
+    </div>
+    
+</body>
+</html>

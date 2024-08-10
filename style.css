@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.wrapper{
+    background: url(Images/6995772013e070de0d62cc5853f4df9f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 100%;
+}
+.filter{
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+}
+/* NAVBAR */
+nav{
+    min-height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: white solid 1px;
+}
+nav .container{
+    position: fixed;
+    width: 100%;
+    max-width: 90vw;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 1rem;
+    gap: 2rem;
+    top: 8rem;
+}
+/* .list-social{
+    display: flex;
+}*/
+.bx{
+    font-size: 30px;  
+    color: white;
+} 
+.hamburger-lines{
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    width: 32px;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+.line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+}
+
+.logo {
+    background: url(Images/Avicii-Logo-2011-2018.png);
+    background-size: cover;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+}
+/* END OF NAVBAR */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+/* PAGE1 */
+article{
+    width: 100%;
+    min-height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article .container{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+    min-width: 350px;
+    min-height: 60vh;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrap{
+    flex: 1;
+}
+ 
+.container img{
+    width: 90%;
+   
+}
+.song-picture h3{
+    writing-mode: vertical-rl;
+    text-orientation: inherit;
+    transform: rotate(180deg);
+    align-self: flex-end;
+    font-size: 1.5rem;
+}
+
+
+.song-picture span{
+    color: #50a584;
+}
+
+.song-picture{
+    display: flex;
+    max-width: 100%;
+    min-width: 350px;
+    width: 49.2%;
+}
+.play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    width: 49.2%;
+}
+.play h1{
+    font-size:6rem ;
+    
+}
+.play h2{
+    
+    font-size:4rem;
+}
+
+
+.uppercase{
+    text-transform: uppercase;
+}
+.letter{
+    letter-spacing: 0.1em
+}
+
+/* Button */
+.buttons button{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    gap: 2rem;
+    max-width: 70%;
+}
+.listen{
+    background-color: #50a584;
+    border: none;
+}
+.listen:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.share{
+    background-color: transparent;
+    border: solid white 1px;
+    padding: 1rem 2rem;
+}
+.share:hover{
+    background-color: aliceblue;
+    color: black;
+}
+/* end of Buttons */
+
+/* Navigation bar */
+.navigation{
+    position: absolute;
+    height: 100%;
+    width: 450px;
+    max-width: 100%;
+    background-color:black;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px;
+    overflow-y: scroll;
+    border: solid 1px white;
+    display: none;
+}
+.show-menu{
+    display: unset;
+}
+.navigation .small-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.navigation .small-container .line1{
+    transform-origin: 0% 0%;
+    transform: rotate(45deg);
+}
+
+.navigation .small-container .line2{
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg);
+}
+
+.content h2{
+    padding: 5px 0;
+    text-align: justify;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+}
+.dropdown a{
+    padding: 8px 0;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    font-size: medium;
+    font-weight: 300;
+    
+}
+.show{
+    height: 100%;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    margin:2rem 0;
+}
+
+.sign button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: solid white 1px;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+}
+.sign .sign-up{
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border: none ;
+}
+
+
+/* End of Navigation bar */
+@media  only screen and (max-width: 1350px){
+    .list-social{
+        position: unset;
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+        background-color: black;
+    }
+    article{
+        padding-top: 10%;
+    }
+}
+@media  only screen and (max-width: 550px){
+    .play h1{
+        font-size:4rem ;
+    }
+    .play h2{    
+        font-size:2rem;
+    }
+    
+    .song-picture h3{
+        font-size: 1rem;
+    }
+    .list-social{
+        display: none;;
+    }
+}
+
+
